@@ -9,8 +9,8 @@ management.print();
 Student haydn = new Student("haydn", 22044163);
 haydn.print();
  Student ID: 22044163 Name: Haydn
-student1.enrol(management);
-student1.printCourse();
+haydn.enrol(management);
+haydn.printCourse();
  --------------------------------
    App211: Course Details
  --------------------------------
