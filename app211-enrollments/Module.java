@@ -3,7 +3,7 @@
  * This class models an example BNU Module
  *
  * @author Haydn Roberts
- * @version 1.1
+ * @version 1.2
  */
 public class Module
 {
@@ -23,15 +23,30 @@ public class Module
         this.creditValue = 0;
     }
 
-
+    
+    public int getCredit()
+    {
+            return creditValue;
+    }
+    
+    public String getCode()
+    {
+            return code;
+    }
+     
+    public String getTitle()
+    {
+            return title;
+    }
+    
     /**
-     * A method to print the Module title and code
+     * A method to print the Module title, code, and credit value
     */
     public void print()
     {
         printHeading();
         
-        System.out.println(" Module Code, Title and Credits: " + code + ", " + title + ", " + creditValue);
+        System.out.println(" Module Code, Title and Credits: " + code + " | " + title + " | " + creditValue);
         System.out.println();
     }
     

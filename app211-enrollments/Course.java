@@ -25,7 +25,6 @@ public class Course
         this.title = title;
     }
 
-    
     /**
      * Print the details of the course, the list
      * of students enrolled and the module
@@ -48,7 +47,6 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
-    
     
         public void addModule(Course course)
     {
