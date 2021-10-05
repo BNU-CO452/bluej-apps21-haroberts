@@ -3,14 +3,14 @@
  * This class models an example BNU Module
  *
  * @author Haydn Roberts
- * @version 1.0
+ * @version 1.1
  */
 public class Module
 {
     // Variables
     private String code;
     private String title;
-    private int credits;
+    private int creditValue;
     
     /**
      * Create a Course with a maximum number of enrolments. 
@@ -20,6 +20,7 @@ public class Module
     {
         this.code = code;
         this.title = title;
+        this.creditValue = 0;
     }
 
 
@@ -30,10 +31,10 @@ public class Module
     {
         printHeading();
         
-        System.out.println(" Module Code and Title: " + code + ": " + title);
+        System.out.println(" Module Code, Title and Credits: " + code + ", " + title + ", " + creditValue);
         System.out.println();
     }
-
+    
     /**
      * Print out the details of the Module to the terminal.
      */
@@ -48,9 +49,9 @@ public class Module
     /** 
      * Set the credits for the module
      */
-    public void setCredits(Module module)
+    public void setCredits(int creditValue)
     {
-        this.credits = credits;
+        this.creditValue = creditValue;
+    
     }
-
 }
