@@ -7,27 +7,38 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Variables
+    private String code;
+    private String title;
 
     /**
      * Constructor for objects of class Module
      */
     public Module()
     {
-        // initialise instance variables
-        x = 0;
+       
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+     * A method to print the Module title and code
+    */
+    public void print()
     {
-        // put your code here
-        return x + y;
+        printHeading();
+        
+        System.out.println(" Module Code and Title: " + code + ": " + title);
+        System.out.println();
     }
+    /**
+     * Print out the details of the Module to the terminal.
+     */
+    private void printHeading()
+    {
+        System.out.println(" --------------------------------");
+        System.out.println("   App211: Module Details");
+        System.out.println(" --------------------------------");
+        System.out.println();
+    }
+
+
 }
