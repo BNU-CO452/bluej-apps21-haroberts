@@ -48,7 +48,7 @@ public class Course
         System.out.println();
     }
     
-        public void addModule(Course course)
+        public void addModule(Module module)
     {
         this.module = module;
     }
