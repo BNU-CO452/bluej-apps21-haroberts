@@ -22,7 +22,6 @@ public class Module
         this.title = title;
         this.creditValue = 0;
     }
-
     
     public int getCredit()
     {

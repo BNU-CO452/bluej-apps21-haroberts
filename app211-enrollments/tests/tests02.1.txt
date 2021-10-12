@@ -1,0 +1,21 @@
+Student haydn = new Student("haydn", 22044163);
+Course mgmt = new Course("BB1BMI1", "management");
+Module programming = new Module("CO452", "programming concepts");
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code, Title and Credits: CO452 | programming concepts | 0
+
+programming.setCredits(15);
+mgmt.printModule();
+    Exception occurred.
+mgmt.addModule(programming);
+mgmt.printModule();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code, Title and Credits: CO452 | programming concepts | 15
+
