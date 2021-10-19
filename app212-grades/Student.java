@@ -4,8 +4,8 @@ import java.util.*;
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2021-08-18
+ * Modified by Haydn Roberts, Derek Peacock & Nicholas Day
+ * @version 1.1 19/10/2021
  */
 public class Student
 {
