@@ -13,7 +13,7 @@ public class Course
     private String code;
     // The full title including qualification and subject
     private String title;
-    // 
+    // A module title and name
     private Module module;
     
     /**
@@ -50,11 +50,17 @@ public class Course
         System.out.println();
     }
     
+        /**
+     * Create a module under a course.
+     */
     public void addModule(Module module)
     {
         this.module = module;
     }
     
+        /**
+     * Print out the details of the module to the terminal.
+     */
     public void printModule()
     {
         module.print();
