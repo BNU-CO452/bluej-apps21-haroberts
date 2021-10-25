@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Haydn", 22044163);
     }
     
     /**
@@ -104,6 +104,10 @@ public class Student
     
     private void printModules()
     {
+        for(ModuleMark moduleMark: marks)
+        {
+            moduleMark.print();
+        }
 
     }
     
