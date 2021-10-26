@@ -24,7 +24,6 @@ public class Course
         modules  = new ArrayList<Module>();
         
         createModules();
-        
     }
     
     /**
@@ -48,14 +47,14 @@ public class Course
      */
     public void createModules()
     {
-        Module co452 = new Module("CO452", "programming");
-        Module mg412 = new Module("MG412", "marketing");
-        Module co454 = new Module("CO454", "digital technologies");
-        Module mg461 = new Module("MG461", "global business environment");
+        Module co452 = new Module("CO452", "Programming Concepts");
+        Module mg412 = new Module("MG412", "Principles of Marketing");
+        Module co454 = new Module("CO454", "Digital Technologies and Professional Practice");
+        Module mg461 = new Module("MG461", "Global Business Environment");
         addModule(co452);
-        modules.add(mg412);
-        modules.add(co454);
-        modules.add(mg461);
+        addModule(mg412);
+        addModule(co454);
+        addModule(mg461);
     }
     
     public void addModule(Module module)
