@@ -98,7 +98,7 @@ public class Course
             total = total + mark.getValue();
         }
         finalMark = total / 4;
-        convertToGrade(finalMark);
+        finalGrade = convertToGrade(finalMark);
         return(finalGrade);
     }
     
