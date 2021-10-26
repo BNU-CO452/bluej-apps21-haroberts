@@ -21,6 +21,10 @@ public class Course
     public Course()
     {
         this("BB1BMI1", "BSc Business Management and Information Technology");
+        modules  = new ArrayList<Module>();
+        
+        createModules();
+        
     }
     
     /**
@@ -48,7 +52,7 @@ public class Course
         Module mg412 = new Module("MG412", "marketing");
         Module co454 = new Module("CO454", "digital technologies");
         Module mg461 = new Module("MG461", "global business environment");
-        modules.add(co452);
+        addModule(co452);
         modules.add(mg412);
         modules.add(co454);
         modules.add(mg461);
