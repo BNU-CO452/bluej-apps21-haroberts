@@ -12,6 +12,7 @@ public class Course
     public final static int MAXN_MODULES = 4;
     
     public ArrayList<Module> modules;
+    public ArrayList<Student> students;
     
     private String code;
     private String title;
@@ -22,8 +23,10 @@ public class Course
     {
         this("BB1BMI1", "BSc Business Management and Information Technology");
         modules  = new ArrayList<Module>();
+        students = new ArrayList<Student>();
         
         createModules();
+        createStudents();
     }
     
     /**
@@ -55,6 +58,15 @@ public class Course
         addModule(mg412);
         addModule(co454);
         addModule(mg461);
+    }
+    
+    public void createStudents()
+    {
+        Student Fiza = new Student("Fiza", 2211000);
+        Student Devine = new Student ("Devine", 2211001);
+        Student Louie = new Student ("Louie", 2211002);
+        students.add Fiza;
+        
     }
     
     public void addModule(Module module)
