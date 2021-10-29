@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 /**
  * This class stores information about a course
  * that enrolled students may want to complete
@@ -36,6 +37,7 @@ public class Course
         this.title = title;
         
         modules  = new ArrayList<Module>();
+        students = new ArrayList<Student>();
         
         createModules();
     }
@@ -50,13 +52,26 @@ public class Course
         Module co452 = new Module("CO452", "Programming Concepts");
         Module mg412 = new Module("MG412", "Principles of Marketing");
         Module co454 = new Module("CO454", "Digital Technologies and Professional Practice");
-        Module mg461 = new Module("MG461", "Global Business Environment");
+        Module bm461 = new Module("MG461", "Global Business Environment");
         addModule(co452);
         addModule(mg412);
         addModule(co454);
-        addModule(mg461);
+        addModule(bm461);
     }
     
+<<<<<<< Updated upstream
+=======
+    public void createStudents()
+    {
+        Student fiza = new Student("Fiza", 2211000);
+        Student devine = new Student ("Devine", 2211001);
+        Student louie = new Student ("Louie", 2211002);
+        students.add(fiza);
+        students.add(devine);
+        students.add(louie);
+    }
+    
+>>>>>>> Stashed changes
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -126,5 +141,14 @@ public class Course
             module.printCredit();
         }
     
+    }
+    
+    /**
+     * Print the students enrolled on a course
+     */
+    public void printStudents()
+    {    System.out.println();
+         System.out.print(" Students   :" + students);
+         System.out.println();
     }
 }

@@ -26,6 +26,7 @@ dependency8.type=UsesDependency
 dependency9.from=Course
 dependency9.to=ModuleMark
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 editor.fx.0.height=765
 editor.fx.0.width=650
 editor.fx.0.x=635
@@ -41,6 +42,23 @@ package.editor.y=0
 package.frame.height=765
 package.frame.width=650
 package.numDependencies=9
+=======
+editor.fx.0.height=764
+editor.fx.0.width=1292
+editor.fx.0.x=-6
+editor.fx.0.y=-6
+objectbench.height=301
+objectbench.width=614
+package.divider.horizontal=0.6
+package.divider.vertical=0.5347432024169184
+package.editor.height=334
+package.editor.width=512
+package.editor.x=635
+package.editor.y=0
+package.frame.height=757
+package.frame.width=650
+package.numDependencies=10
+>>>>>>> Stashed changes
 package.numTargets=6
 package.showExtends=true
 package.showUses=true
