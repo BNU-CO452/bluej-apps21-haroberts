@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * This class sets and retrieves the 
+ * mark for any module within a course.
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Haydn Roberts
