@@ -6,13 +6,14 @@ import java.util.Arrays;
  *
  * @author Derek Peacock and Nicholas Day
  * Modified by Haydn Roberts
- * @version 1.1 19/10/2021
+ * @version 1.1 31/10/2021
  */
 public class Course
 {
     public final static int MAXN_MODULES = 4;
     
     public ArrayList<Module> modules;
+    public ArrayList<Student> students;
     
     private String code;
     private String title;
@@ -59,8 +60,10 @@ public class Course
         addModule(bm461);
     }
     
-<<<<<<< Updated upstream
-=======
+    /**
+     * Create students and add them to students list.
+     * 
+     */
     public void createStudents()
     {
         Student fiza = new Student("Fiza", 2211000);
@@ -71,7 +74,10 @@ public class Course
         students.add(louie);
     }
     
->>>>>>> Stashed changes
+    /**
+     * Add modules to module list until max (4) reached.
+     * 
+     */
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -81,6 +87,7 @@ public class Course
     }
     
     /**
+     * Convert mark figure to a lettered grade.
      * 
      */
     public Grades convertToGrade(int mark)

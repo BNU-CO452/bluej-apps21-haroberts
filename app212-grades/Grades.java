@@ -5,7 +5,7 @@
  * Each value is the top percentage mark for that grade
  * @author Derek Peacock and Nicholas Day
  * Modified by Haydn Roberts
- * @version 1.1 19/10/2021
+ * @version 1.1 30/10/2021
  */
 public enum Grades
 {
