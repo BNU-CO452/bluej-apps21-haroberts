@@ -5,7 +5,7 @@ haydn.enrol(business);
 haydn.printTranscript();
  ------------------------------------
  App21-02: Exam Board Transcript 2021
-        by student name
+        by Haydn
  ------------------------------------
  Student ID: 22044163, Haydn
 
