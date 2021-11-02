@@ -2,7 +2,8 @@
  * Model some details of a product sold by a company.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * Edited by Haydn Roberts
+ * @version 2021.11.0
  */
 public class Product
 {

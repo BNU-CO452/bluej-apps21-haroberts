@@ -5,7 +5,8 @@
  * the StockManager class is completed.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * Modified by Haydn Roberts
+ * @version 2021.11.02
  */
 public class StockDemo
 {
@@ -23,9 +24,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Item 1"));
+        stock.add(new Product(102, "Item 2"));
+        stock.add(new Product(103, "Item 3"));
+        stock.add(new Product(104, "Item 4"));
+        stock.add(new Product(105, "Item 5"));
+        stock.add(new Product(106, "Item 6"));
+        stock.add(new Product(107, "Item 7"));
+        stock.add(new Product(108, "Item 8"));
+        stock.add(new Product(109, "Item 9"));
+        stock.add(new Product(110, "Item 10"));
     }
     
     /**
@@ -45,14 +53,29 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print();  
     }
     
     private void buyProducts()
     {
+        stock.buyProduct(101, 7);
+        stock.buyProduct(102, 5);
+        stock.buyProduct(103, 6);
+        stock.buyProduct(104, 4);
+        stock.buyProduct(105, 5);
+        stock.buyProduct(106, 6);
+        stock.buyProduct(107, 5);
+        stock.buyProduct(108, 7);
+        stock.buyProduct(109, 8);
+        stock.buyProduct(110, 4);
     }
 
     private void sellProducts()
     {
+        stock.sellProduct(102, 1);
+        stock.sellProduct(106, 3);
+        stock.sellProduct(108, 2);
+        stock.sellProduct(109, 5);
     }    
+    
 }
