@@ -29,6 +29,11 @@ public class StockList
         stock.add(item);
     }
     
+    public void remove(Product item)
+    {
+        stock.remove(item);
+    }
+    
     /**
      * A method to buy a single quantity of the product
      */
@@ -66,8 +71,26 @@ public class StockList
         return null;
     }
     
-    //public Product findProductByName()
-    
+
+    /**
+     * Find a product to match the product id,
+     * if not found return null
+     */
+    public Product findProductByName(String productName)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName().contains(productName))
+            {
+                System.out.println(product);
+            } 
+            else
+            {
+                System.out.println("Product Not Recognised");
+            }
+        }    
+            return null;
+    }
     
     /**
      * A method to sell a single quantity of the product
@@ -164,5 +187,17 @@ public class StockList
         System.out.println(" Haydn's Stock List");
         System.out.println(" ====================");
         System.out.println();
+    }
+    
+    public void listLowStock()
+    {
+        printHeading();
+        for (Product product : stock)
+        {
+            if (product.getQuantity() < 5)
+                {
+                    System.out.println(product);
+                }
+        }
     }
 }

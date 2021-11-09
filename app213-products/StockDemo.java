@@ -72,10 +72,16 @@ public class StockDemo
 
     private void sellProducts()
     {
-        stock.sellProduct(102, 1);
+        stock.sellProduct(101, 1);
+        stock.sellProduct(102, 2);
+        stock.sellProduct(103, 1);
+        stock.sellProduct(104, 4);
+        stock.sellProduct(105, 6);
         stock.sellProduct(106, 3);
-        stock.sellProduct(108, 2);
-        stock.sellProduct(109, 5);
+        stock.sellProduct(107, 2);
+        stock.sellProduct(108, 3);
+        stock.sellProduct(109, 2);
+        stock.sellProduct(110, 5);
     }    
     
 }
