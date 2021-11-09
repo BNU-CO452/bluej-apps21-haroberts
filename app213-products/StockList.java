@@ -28,12 +28,13 @@ public class StockList
     {
         stock.add(item);
     }
-    
-    public void remove(Product item)
+
+    public void remove(int productID)
     {
-        stock.remove(item);
+        Product product = findProduct(productID);
+        stock.remove(product);
     }
-    
+
     /**
      * A method to buy a single quantity of the product
      */
@@ -41,7 +42,7 @@ public class StockList
     {
         buyProduct(productID, 1);
     }
-    
+
     /**
      * Buy a quantity of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -54,7 +55,7 @@ public class StockList
         product.increaseQuantity(amount);
         System.out.println("Bought " + amount + " of Product ID " + productID);
     }
-    
+
     /**
      * Find a product to match the product id,
      * if not found return null
@@ -70,7 +71,6 @@ public class StockList
         }
         return null;
     }
-    
 
     /**
      * Find a product to match the product id,
@@ -89,9 +89,9 @@ public class StockList
                 System.out.println("Product Not Recognised");
             }
         }    
-            return null;
+        return null;
     }
-    
+
     /**
      * A method to sell a single quantity of the product
      */
@@ -99,7 +99,7 @@ public class StockList
     {
         sellProduct(productID, 1);
     }
-    
+
     /**
      * Sell a given amount of the given product.
      * Show the before and after status of the product.
@@ -109,7 +109,7 @@ public class StockList
     public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        
+
         if(product != null) 
         {
             if(product.getQuantity() > 0)
@@ -126,18 +126,18 @@ public class StockList
         {
             System.out.println("Invalid Product ID");
         }
-        
+
         if(product.getQuantity() < 4)
         {
-                product.increaseQuantity(10 - amount);
-                System.out.println("Product restocked");
+            product.increaseQuantity(10 - amount);
+            System.out.println("Product restocked");
         }
         else
         {
-                System.out.println("Product stock levels okay");
+            System.out.println("Product stock levels okay");
         }
     }    
-    
+
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -158,13 +158,13 @@ public class StockList
     public void printProduct(int productID)
     {
         Product product = findProduct(productID);
-        
+
         if(product != null) 
         {
             System.out.println(product.toString());
         }
     }
-    
+
     /**
      * Print out each product in the stock
      * in the order they are in the stock list
@@ -172,7 +172,7 @@ public class StockList
     public void print()
     {
         printHeading();
-        
+
         for(Product product : stock)
         {
             System.out.println(product);
@@ -180,7 +180,7 @@ public class StockList
 
         System.out.println();
     }
-    
+
     public void printHeading()
     {
         System.out.println();
@@ -188,16 +188,16 @@ public class StockList
         System.out.println(" ====================");
         System.out.println();
     }
-    
+
     public void listLowStock()
     {
         printHeading();
         for (Product product : stock)
         {
-            if (product.getQuantity() < 5)
-                {
-                    System.out.println(product);
-                }
+            if (product.getQuantity() < 8)
+            {
+                System.out.println(product);
+            }
         }
     }
 }
