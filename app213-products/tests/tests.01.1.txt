@@ -1,0 +1,25 @@
+StockList carList = new StockList();
+Product product2 = new Product(111, "TVR Sagaris");
+product2.print();
+ ID 111: TVR Sagaris stock level: 0
+product2.setQuantity(6);
+product2.decreaseQuantity(3);
+product2.print();
+ ID 111: TVR Sagaris stock level: 3
+product2.increaseQuantity(5);
+product2.print();
+ ID 111: TVR Sagaris stock level: 8
+product2.decreaseQuantity(4);
+product2.print();
+ ID 111: TVR Sagaris stock level: 4
+Product product3 = new Product(112, "Lotus Esprit");
+carList.add(product2);
+carList.add(product3);
+carList.print();
+
+ Haydn's Stock List
+ ====================
+
+ ID 111: TVR Sagaris stock level: 4
+ ID 112: Lotus Esprit stock level: 0
+

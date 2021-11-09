@@ -66,6 +66,9 @@ public class StockList
         return null;
     }
     
+    //public Product findProductByName()
+    
+    
     /**
      * A method to sell a single quantity of the product
      */
@@ -78,6 +81,7 @@ public class StockList
      * Sell a given amount of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
+     * Restock levels if less than 4 of purchased product in stocklist.
      */
     public void sellProduct(int productID, int amount)
     {
@@ -102,7 +106,7 @@ public class StockList
         
         if(product.getQuantity() < 4)
         {
-                product.increaseQuantity(4 - amount);
+                product.increaseQuantity(10 - amount);
                 System.out.println("Product restocked");
         }
         else

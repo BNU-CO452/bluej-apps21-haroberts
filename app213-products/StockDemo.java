@@ -24,16 +24,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Item 1"));
-        stock.add(new Product(102, "Item 2"));
-        stock.add(new Product(103, "Item 3"));
-        stock.add(new Product(104, "Item 4"));
-        stock.add(new Product(105, "Item 5"));
-        stock.add(new Product(106, "Item 6"));
-        stock.add(new Product(107, "Item 7"));
-        stock.add(new Product(108, "Item 8"));
-        stock.add(new Product(109, "Item 9"));
-        stock.add(new Product(110, "Item 10"));
+        stock.add(new Product(101, "Triumph Spitfire"));
+        stock.add(new Product(102, "Vauxhall Astra"));
+        stock.add(new Product(103, "Lotus Elan"));
+        stock.add(new Product(104, "Vauxhall VX220"));
+        stock.add(new Product(105, "BMW Z4"));
+        stock.add(new Product(106, "Smart Roadster"));
+        stock.add(new Product(107, "TVR Griffith"));
+        stock.add(new Product(108, "Lotus Elise"));
+        stock.add(new Product(109, "Porsche Carrera"));
+        stock.add(new Product(110, "TVR Tamora"));
     }
     
     /**
