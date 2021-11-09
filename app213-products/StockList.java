@@ -32,9 +32,18 @@ public class StockList
     public void remove(int productID)
     {
         Product product = findProduct(productID);
+        
+        if (product != null)
+        {
         stock.remove(product);
+        System.out.println("Product " + productID + " removed ");
+        }
+        else
+        {
+        System.out.println("Product ID Invalid"); 
+        }
     }
-
+    
     /**
      * A method to buy a single quantity of the product
      */
