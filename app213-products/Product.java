@@ -3,7 +3,7 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * Edited by Haydn Roberts
- * @version 2021.11.0
+ * @version 2021.11.10
  */
 public class Product
 {
@@ -52,16 +52,25 @@ public class Product
         return quantity;
     }
 
+    /**
+     * Set the quantity of the product
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Increase the quantity of a product
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Decrease the quantity of a product
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)

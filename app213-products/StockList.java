@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Haydn Roberts 
- * @version 2021.11.02
+ * @version 2021.11.10
  */
 public class StockList
 {
@@ -29,6 +29,9 @@ public class StockList
         stock.add(item);
     }
 
+    /**
+     * Remove a product from the list by ID
+     */
     public void remove(int productID)
     {
         Product product = findProduct(productID);
@@ -87,15 +90,18 @@ public class StockList
      */
     public Product findProductByName(String productName)
     {
+        boolean matchFound=false;
+        
         for(Product product : stock)
         {
             if(product.getName().contains(productName))
             {
+                matchFound=true;
                 System.out.println(product);
             } 
-            else
+            if (matchFound=false)
             {
-                System.out.println("Product Not Recognised");
+                System.out.println("Product Name Not Recognised");
             }
         }    
         return null;
@@ -198,6 +204,9 @@ public class StockList
         System.out.println();
     }
 
+    /**
+     * List all products with stock levels below a given number
+     */
     public void listLowStock()
     {
         printHeading();

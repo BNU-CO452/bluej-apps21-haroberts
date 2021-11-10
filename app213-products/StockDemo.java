@@ -6,7 +6,7 @@
  * 
  * @author David J. Barnes and Michael Kölling.
  * Modified by Haydn Roberts
- * @version 2021.11.02
+ * @version 2021.11.10
  */
 public class StockDemo
 {
@@ -56,6 +56,9 @@ public class StockDemo
         stock.print();  
     }
     
+    /**
+     * Buy 10 products by ID and Quantity
+     */
     private void buyProducts()
     {
         stock.buyProduct(101, 7);
@@ -70,6 +73,9 @@ public class StockDemo
         stock.buyProduct(110, 4);
     }
 
+    /**
+     * Sell 10 products by ID and Quantity
+     */
     private void sellProducts()
     {
         stock.sellProduct(101, 1);
