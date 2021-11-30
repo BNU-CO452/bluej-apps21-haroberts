@@ -4,8 +4,8 @@ import java.util.*;
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2021-08-18
+ * Modified by Haydn Roberts, Derek Peacock & Nicholas Day
+ * @version 1.1 30/10/2021
  */
 public class Student
 {
@@ -24,7 +24,7 @@ public class Student
      */
     public Student()
     {
-        this("Derek", 12345678);
+        this("Haydn", 22044163);
     }
     
     /**
@@ -38,6 +38,9 @@ public class Student
         marks = new ArrayList<ModuleMark>();
     }
 
+    /**
+     * Add a mark to a module.
+     */
     public void addMark(ModuleMark mark)
     {
         marks.add(mark);
@@ -49,7 +52,10 @@ public class Student
      */
     public void awardMark(String moduleCode, int value)
     {
-
+        for(Module module : course.modules)
+        {   ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+        }
     }
     
     /**
@@ -67,7 +73,16 @@ public class Student
      */
     public void awardTestMarks()
     {
-        
+        int value = 73;
+        for(Module module : course.modules)
+        {
+            ModuleMark mark = new ModuleMark(module);
+            mark.setMark(value);
+            
+            value = value - 10;
+            
+            marks.add(mark);
+        }
     }
     
     /**
@@ -96,22 +111,36 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * Print a course's details.
+     *
+     */
     public void printCourse()
     {
         this.print();
         course.print();
     }
     
+    /**
+     * Print module and grade.
+     */
     private void printModules()
     {
-
+        for(ModuleMark mark : marks)
+        {
+            mark.print();
+            System.out.println("\t" + course.convertToGrade(mark.getValue()));
+        }
     }
     
+    /**
+     * Print details of module, course, and grades.
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Haydn");
         System.out.println(" ------------------------------------");
         
         printCourse();
@@ -122,7 +151,8 @@ public class Student
         System.out.println(" Code \t Module \t\tCredit\t Mark \t Grade");
         System.out.println(" ---- \t -------------------- \t ------\t ---- \t -----");
         
-       
+        printModules();
+        
         Grades finalGrade = course.calculateGrade(marks);
         
         System.out.println();

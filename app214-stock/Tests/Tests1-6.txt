@@ -1,0 +1,169 @@
+C:\Users\Haydn\.jdks\corretto-16.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\lib\idea_rt.jar=49681:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Haydn\Documents\GitHub\bluej-apps21-haroberts\app214-stock\out\production\App214-stock Program
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 0
+ ID 102: Vauxhall Astra stock level: 0
+ ID 103: Lotus Elan stock level: 0
+ ID 104: Vauxhall VX220 stock level: 0
+ ID 105: BMW Z4 stock level: 0
+ ID 106: Smart Roadster stock level: 0
+ ID 107: TVR Griffith stock level: 0
+ ID 108: Lotus Elise stock level: 0
+ ID 109: Porsche Carrera stock level: 0
+ ID 110: TVR Tamora stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+
+Process finished with exit code 0
+
+
+C:\Users\Haydn\.jdks\corretto-16.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\lib\idea_rt.jar=49695:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Haydn\Documents\GitHub\bluej-apps21-haroberts\app214-stock\out\production\App214-stock Program
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the new product ID:  
+200
+Please enter the new product name:  newTestItem
+Product200(newTestItem)added
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 0
+ ID 102: Vauxhall Astra stock level: 0
+ ID 103: Lotus Elan stock level: 0
+ ID 104: Vauxhall VX220 stock level: 0
+ ID 105: BMW Z4 stock level: 0
+ ID 106: Smart Roadster stock level: 0
+ ID 107: TVR Griffith stock level: 0
+ ID 108: Lotus Elise stock level: 0
+ ID 109: Porsche Carrera stock level: 0
+ ID 110: TVR Tamora stock level: 0
+ ID 200: newTestItem stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > add
+Please enter the new product ID:  
+101
+Please enter the new product name:  Triumph Spitfire
+
+Product already exists. Please enter a new ID.
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+Please enter your choice > remove
+Please enter the product ID to remove:  
+101
+Product 101 removed 
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > print
+
+ Haydn's Stock List
+ ====================
+
+ ID 102: Vauxhall Astra stock level: 0
+ ID 103: Lotus Elan stock level: 0
+ ID 104: Vauxhall VX220 stock level: 0
+ ID 105: BMW Z4 stock level: 0
+ ID 106: Smart Roadster stock level: 0
+ ID 107: TVR Griffith stock level: 0
+ ID 108: Lotus Elise stock level: 0
+ ID 109: Porsche Carrera stock level: 0
+ ID 110: TVR Tamora stock level: 0
+ ID 101: Triumph Spitfire stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > remove
+Please enter the product ID to remove:  
+101
+Product ID not found
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
+Please enter your choice > quit
+
+Process finished with exit code 0

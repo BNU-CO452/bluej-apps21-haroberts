@@ -1,0 +1,199 @@
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 6
+ ID 102: Vauxhall Astra stock level: 11
+ ID 103: Lotus Elan stock level: 5
+ ID 104: Vauxhall VX220 stock level: 6
+ ID 105: BMW Z4 stock level: 5
+ ID 106: Smart Roadster stock level: 10
+ ID 107: TVR Griffith stock level: 11
+ ID 108: Lotus Elise stock level: 4
+ ID 109: Porsche Carrera stock level: 6
+ ID 110: TVR Tamora stock level: 4
+
+stockLis1.findProductByName("TVR")
+Product Name Not Recognised
+    returned Object null
+StockList stockLis1 = new StockList();
+StockDemo stockDem1 = new StockDemo(stockLis1);
+stockDem1.runDemo();
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 0
+ ID 102: Vauxhall Astra stock level: 0
+ ID 103: Lotus Elan stock level: 0
+ ID 104: Vauxhall VX220 stock level: 0
+ ID 105: BMW Z4 stock level: 0
+ ID 106: Smart Roadster stock level: 0
+ ID 107: TVR Griffith stock level: 0
+ ID 108: Lotus Elise stock level: 0
+ ID 109: Porsche Carrera stock level: 0
+ ID 110: TVR Tamora stock level: 0
+
+Bought 7 of Product ID 101
+Bought 5 of Product ID 102
+Bought 6 of Product ID 103
+Bought 4 of Product ID 104
+Bought 5 of Product ID 105
+Bought 6 of Product ID 106
+Bought 5 of Product ID 107
+Bought 7 of Product ID 108
+Bought 8 of Product ID 109
+Bought 4 of Product ID 110
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 7
+ ID 102: Vauxhall Astra stock level: 5
+ ID 103: Lotus Elan stock level: 6
+ ID 104: Vauxhall VX220 stock level: 4
+ ID 105: BMW Z4 stock level: 5
+ ID 106: Smart Roadster stock level: 6
+ ID 107: TVR Griffith stock level: 5
+ ID 108: Lotus Elise stock level: 7
+ ID 109: Porsche Carrera stock level: 8
+ ID 110: TVR Tamora stock level: 4
+
+Sold 1 of product ID 101
+Product stock levels okay
+Sold 2 of product ID 102
+Product restocked
+Sold 1 of product ID 103
+Product stock levels okay
+Sold 4 of product ID 104
+Product restocked
+Sold 6 of product ID 105
+Product stock levels okay
+Sold 3 of product ID 106
+Product restocked
+Sold 2 of product ID 107
+Product restocked
+Sold 3 of product ID 108
+Product stock levels okay
+Sold 2 of product ID 109
+Product stock levels okay
+Sold 5 of product ID 110
+Product stock levels okay
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 6
+ ID 102: Vauxhall Astra stock level: 11
+ ID 103: Lotus Elan stock level: 5
+ ID 104: Vauxhall VX220 stock level: 6
+ ID 105: BMW Z4 stock level: 5
+ ID 106: Smart Roadster stock level: 10
+ ID 107: TVR Griffith stock level: 11
+ ID 108: Lotus Elise stock level: 4
+ ID 109: Porsche Carrera stock level: 6
+ ID 110: TVR Tamora stock level: 4
+
+stockLis1.findProductByName("TVR")
+    returned Object <object reference>
+StockList stockLis1 = new StockList();
+StockDemo stockDem1 = new StockDemo(stockLis1);
+stockLis1.findProductByName("TVR")
+ ID 107: TVR Griffith stock level: 0
+ ID 110: TVR Tamora stock level: 0
+    returned Object null
+stockLis1.findProductByName("abbb")
+    returned Object null
+StockList carList = new StockList();
+StockDemo carDemo = new StockDemo(carList);
+carDemo.runDemo();
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 0
+ ID 102: Vauxhall Astra stock level: 0
+ ID 103: Lotus Elan stock level: 0
+ ID 104: Vauxhall VX220 stock level: 0
+ ID 105: BMW Z4 stock level: 0
+ ID 106: Smart Roadster stock level: 0
+ ID 107: TVR Griffith stock level: 0
+ ID 108: Lotus Elise stock level: 0
+ ID 109: Porsche Carrera stock level: 0
+ ID 110: TVR Tamora stock level: 0
+
+Bought 7 of Product ID 101
+Bought 5 of Product ID 102
+Bought 6 of Product ID 103
+Bought 4 of Product ID 104
+Bought 5 of Product ID 105
+Bought 6 of Product ID 106
+Bought 5 of Product ID 107
+Bought 7 of Product ID 108
+Bought 8 of Product ID 109
+Bought 4 of Product ID 110
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 7
+ ID 102: Vauxhall Astra stock level: 5
+ ID 103: Lotus Elan stock level: 6
+ ID 104: Vauxhall VX220 stock level: 4
+ ID 105: BMW Z4 stock level: 5
+ ID 106: Smart Roadster stock level: 6
+ ID 107: TVR Griffith stock level: 5
+ ID 108: Lotus Elise stock level: 7
+ ID 109: Porsche Carrera stock level: 8
+ ID 110: TVR Tamora stock level: 4
+
+Sold 1 of product ID 101
+Product stock levels okay
+Sold 2 of product ID 102
+Product restocked
+Sold 1 of product ID 103
+Product stock levels okay
+Sold 4 of product ID 104
+Product restocked
+Sold 6 of product ID 105
+Product stock levels okay
+Sold 3 of product ID 106
+Product restocked
+Sold 2 of product ID 107
+Product restocked
+Sold 3 of product ID 108
+Product stock levels okay
+Sold 2 of product ID 109
+Product stock levels okay
+Sold 5 of product ID 110
+Product stock levels okay
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 6
+ ID 102: Vauxhall Astra stock level: 11
+ ID 103: Lotus Elan stock level: 5
+ ID 104: Vauxhall VX220 stock level: 6
+ ID 105: BMW Z4 stock level: 5
+ ID 106: Smart Roadster stock level: 10
+ ID 107: TVR Griffith stock level: 11
+ ID 108: Lotus Elise stock level: 4
+ ID 109: Porsche Carrera stock level: 6
+ ID 110: TVR Tamora stock level: 4
+
+carList.remove(105);
+Product 105 removed 
+carList.findProductByName("Lotus")
+ ID 103: Lotus Elan stock level: 5
+ ID 108: Lotus Elise stock level: 4
+    returned Object null
+carList.listLowStock();
+
+ Haydn's Stock List
+ ====================
+
+ ID 101: Triumph Spitfire stock level: 6
+ ID 103: Lotus Elan stock level: 5
+ ID 104: Vauxhall VX220 stock level: 6
+ ID 108: Lotus Elise stock level: 4
+ ID 109: Porsche Carrera stock level: 6
+ ID 110: TVR Tamora stock level: 4

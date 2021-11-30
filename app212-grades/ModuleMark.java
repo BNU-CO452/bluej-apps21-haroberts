@@ -1,9 +1,11 @@
 
 /**
- * Write a description of class ModuleMark here.
+ * This class sets and retrieves the 
+ * mark for any module within a course.
  *
  * @author Derek Peacock and Nicholas Day
- * @version 2021-08-18
+ * Modified by Haydn Roberts
+ * @version 1.1 30/10/2021
  */
 public class ModuleMark
 {
@@ -19,6 +21,9 @@ public class ModuleMark
         this.module = module;
     }
     
+    /**
+     * Returns the mark.
+     */
     public int getValue()
     {
         return mark;
@@ -40,11 +45,17 @@ public class ModuleMark
         }
     }
     
+    /**
+     * Sets the module's mark
+     */
     public void setMark(int mark)
     {
         this.mark = mark;
     }
     
+    /**
+     * Returns the module.
+     */
     public Module getModule()
     {
         return module;

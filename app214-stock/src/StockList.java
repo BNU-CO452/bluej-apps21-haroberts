@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class StockList
 {
     // A list of the products.
-    private ArrayList<Product> stock;
+    public ArrayList<Product> stock;
 
     /**
      * Initialise the stock manager.
@@ -58,7 +58,7 @@ public class StockList
     /**
      * Buy a quantity of a particular product.
      * Increase the quantity of the product by the given amount.
-     * @param id The ID of the product.
+     * @param productID The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
     public void buyProduct(int productID, int amount)
@@ -118,7 +118,7 @@ public class StockList
     /**
      * Sell a given amount of the given product.
      * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
+     * @param productID The ID of the product being sold.
      * Restock levels if less than 4 of purchased product in stocklist.
      */
     public void sellProduct(int productID, int amount)
@@ -157,7 +157,7 @@ public class StockList
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
      * match any product, return zero.
-     * @param id The ID of the product.
+     * @param productID The ID of the product.
      * @return The quantity of the given product in stock.
      */
     public int numberInStock(int productID)
@@ -168,7 +168,7 @@ public class StockList
     /**
      * Print details of the given product. If found,
      * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
+     * @param productID The ID of the product to look for.
      */
     public void printProduct(int productID)
     {

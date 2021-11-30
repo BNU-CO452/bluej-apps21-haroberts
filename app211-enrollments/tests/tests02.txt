@@ -1,0 +1,31 @@
+Module programming = new Module("CO452", "programming concepts");
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code, Title and Credits: CO452 | programming concepts | 0
+
+programming.setCredits(15);
+programming.print();
+ --------------------------------
+   App211: Module Details
+ --------------------------------
+
+ Module Code, Title and Credits: CO452 | programming concepts | 15
+
+mgmt.printModule();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Module: null
+
+mgmt.addModule(programming);
+mgmt.printModule();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Module: Module@5de009ba
+

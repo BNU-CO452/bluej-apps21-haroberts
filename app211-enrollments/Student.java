@@ -4,8 +4,8 @@
  * concerning the course the student is currently enrolled on
  * 
  * @author Michael Kölling and David Barnes
- * @modified by Derek Peacock and Nicholas Day
- * @version 2021:08:15
+ * @modified by Haydn Roberts, Derek Peacock and Nicholas Day
+ * @version 2021:10:12
  */
 public class Student
 {
@@ -41,6 +41,10 @@ public class Student
         return id;
     }
 
+    
+         /**
+     * Enrol a student on a course.
+     */
     public void enrol(Course course)
     {
         this.course = course;
@@ -54,6 +58,9 @@ public class Student
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
     
+         /**
+     * Print the student's course to the output terminal.
+     */
     public void printCourse()
     {
         course.print();

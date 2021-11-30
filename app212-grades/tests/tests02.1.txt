@@ -1,0 +1,44 @@
+Student haydn = new Student();
+Course business = new Course();
+business.createModules();
+haydn.enrol(business);
+haydn.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Haydn
+ ------------------------------------
+ Student ID: 22044163, Haydn
+
+ Course BB1BMI1: BSc Business Management and Information Technology
+
+
+ CO452: 	Programming Concepts	  15 credits
+ MG412: 	Principles of Marketing	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+ MG461: 	Global Business Environment	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	73	A
+
+ MG412: 	Principles of Marketing	  15	63	B
+
+ CO454: 	Digital Technologies and Professional Practice	  15	53	C
+
+ MG461: 	Global Business Environment	  15	43	D
+
+
+ Final Course Grade = C
+business.createStudents();
+business.printStudents();
+
+ Students   :[Haydn, Fiza, Devine, Louie]
+
+
+
+ CO452: 	Programming Concepts	  15 credits
+ MG412: 	Principles of Marketing	  15 credits
+ CO454: 	Digital Technologies and Professional Practice	  15 credits
+ MG461: 	Global Business Environment	  15 credits

@@ -1,0 +1,32 @@
+Student haydn = new Student("haydn", 22044163);
+haydn.print();
+ Student ID: 22044163, haydn
+Course mgmt = new Course("BB1BMI1", "management");
+haydn.enrol(mgmt);
+haydn.printCourse();
+ Student ID: 22044163, haydn
+
+ Course BB1BMI1: management
+
+Module programming = new Module("CO452", "Programming Concepts");
+mgmt.addModule(programming);
+ModuleMark programmingMark = new ModuleMark(programming);
+programmingMark.setMark(97);
+haydn.addMark(programmingMark);
+haydn.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 22044163, haydn
+
+ Course BB1BMI1: management
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!

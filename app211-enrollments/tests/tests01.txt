@@ -1,0 +1,19 @@
+Course management = new Course("BB1BMI1", "BSc Business Management and Information Technology");
+management.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1BMI1: BSc Business Management and Information Technology
+
+Student haydn = new Student("haydn", 22044163);
+haydn.print();
+ Student ID: 22044163 Name: Haydn
+haydn.enrol(management);
+haydn.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BB1BMI1: BSc Business Management and Information Technology
+

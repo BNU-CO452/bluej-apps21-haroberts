@@ -45,7 +45,7 @@ public class StockDemo
      */
     public void runDemo()
     {
-        // Show details of all of the products before delivery.
+        // Show details of all the products before delivery.
         
         stock.print();
 
