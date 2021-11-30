@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
  * 
- * Modified by Derek Peacock 13/12/2020
+ * Modified by Haydn Roberts 17 November 2021
  */
 public class InputReader
 {
@@ -29,6 +29,8 @@ public class InputReader
      */
     public String getString(String prompt)
     {
+        reader = new Scanner(System.in);
+
         String inputLine = null;
         boolean isValid = false;
         
@@ -47,8 +49,8 @@ public class InputReader
     }
     
     /**
-     * Read a the next int from standard imput (the text terminal),
-     * and return it as an interger.
+     * Read the next int from standard input (the text terminal),
+     * and return it as an integer.
      * 
      * @return Integer typed by user.
      */
