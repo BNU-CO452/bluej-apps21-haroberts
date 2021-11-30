@@ -114,15 +114,14 @@ public class StockApp {
     /**
      * List all products with stock levels below a given number
      */
-    public void listLowStock()
-    {
-        printHeading();
-        for (Product product : stock) {
-            if (product.getQuantity() < 8) {
-                System.out.println(product);
-            }
-        }
-    }
+   // public void listLowStock()
+  //  {
+     //   printHeading();
+       // for (Product product : stock)
+          //  if (product.getQuantity() < 8) {
+          //      System.out.println(product);
+          //  }
+   // }
 
     /**
      * Print out a menu of operation choices
@@ -147,4 +146,4 @@ public class StockApp {
         System.out.println("      by Haydn Roberts");
         System.out.println("********************************");
     }
-}
+
