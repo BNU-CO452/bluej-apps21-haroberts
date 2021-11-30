@@ -149,6 +149,21 @@ Please enter your choice > print
     Print:      Print all products
     Quit:       Quit the program
 
+Please enter your choice > remove
+Please enter the product ID to remove:  
+101
+Product ID not found
+
+********************************
+  App21-04: Stock Application 
+      by Haydn Roberts
+********************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Quit:       Quit the program
+
 Please enter your choice > quit
 
 Process finished with exit code 0
